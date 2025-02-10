@@ -39,7 +39,7 @@ fun GridItemView(
             painter = painterResource(id = gridItem.imageIcon),
             contentDescription = "",
             modifier = Modifier
-                .padding(top = 5.dp)
+                .padding(top = 5.dp, bottom = 5.dp)
                 .align(Alignment.CenterHorizontally),
             contentScale = ContentScale.FillBounds
         )

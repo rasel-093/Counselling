@@ -39,7 +39,7 @@ fun Home(navHostController: NavHostController) {
             TopAppBar(
                 title = { Text(text = "Counselling", color = LocalSetting.textColor()) },
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = Color(0xFF2196F3)
+                    containerColor = Color(0xFF01678b)
                 ),
                 actions = {
                     IconButton(

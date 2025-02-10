@@ -6,4 +6,7 @@ sealed class Screen(val route: String) {
     data object ListeningScreen : Screen("listening")
     data object SettingScreen : Screen("setting")
     data object QuotesScreen : Screen("quote")
+    data object QuranScreen: Screen("quran")
+    data object HadithScreen: Screen("hadith")
+    data object StoryScreen: Screen("story")
 }

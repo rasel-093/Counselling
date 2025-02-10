@@ -51,7 +51,7 @@ fun SettingsScreen(navHostController: NavHostController) {
             TopAppBar(
                 title = { Text(text = "Settings",color = LocalSetting.textColor()) },
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = Color(0xFF2196F3)
+                    containerColor = Color(0xFF01678b)
                 ),
                 navigationIcon = {
                     IconButton(onClick = {

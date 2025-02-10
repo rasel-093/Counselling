@@ -21,11 +21,11 @@ import com.rasel.counselling.navigation.navigateTo
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Quotes(navHostController: NavHostController) {
+fun Story(navHostController: NavHostController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Quotes") },
+                title = { Text(text = "Story") },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = Color(0xFF01678b)
                 ),
@@ -45,7 +45,7 @@ fun Quotes(navHostController: NavHostController) {
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
-            Text(text = "Quotes Screen")
+            Text(text = "Story Screen")
         }
     }
 }

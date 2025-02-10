@@ -35,7 +35,14 @@ object LocalSetting {
         val settingsViewModel = SettingsViewModel(context)
         val nightModeEnabled = settingsViewModel.nightModeEnabled.collectAsState().value
 
-        return if (nightModeEnabled) Color.Magenta else Color.DarkGray
+        return if (nightModeEnabled) Color.DarkGray  else Color(0xFF48A6C7)
+    }
+    @Composable
+    fun primaryColor(): Color{
+        val context = LocalContext.current
+        val settingsViewModel = SettingsViewModel(context)
+        val nightModeEnabled = settingsViewModel.nightModeEnabled.collectAsState().value
+        return if (nightModeEnabled) Color.DarkGray  else Color(0xFF01678b)
     }
 
     //sound and vibration
