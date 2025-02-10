@@ -26,6 +26,7 @@ import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.rasel.counselling.R
+import com.rasel.counselling.components.ParagraphCard
 import com.rasel.counselling.navigation.Screen
 import com.rasel.counselling.navigation.navigateTo
 
@@ -51,7 +52,7 @@ fun Quran(navHostController: NavHostController) {
             )
         }
     ) { innerPadding ->
-        val ayat: Array<String> = stringArrayResource(id = R.array.ayat)
+        val ayat: Array<String> = stringArrayResource(id = R.array.quran_ayat)
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -71,19 +72,5 @@ fun Quran(navHostController: NavHostController) {
                 }
             }
         }
-    }
-}
-@Composable
-fun ParagraphCard(paragraph: String) {
-    Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(4.dp),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
-    ) {
-        Text(
-            text = paragraph,
-            modifier = Modifier.padding(10.dp)
-        )
     }
 }
